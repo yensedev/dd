@@ -1,12 +1,12 @@
 const { VK } = require('vk-io');
 
 const vk = new VK({
-    token: '800ff093d43795807e105da85ea0602c8e895a80ed0507b0b1038c8114e9d38f8c9a4ba1ba3c7ceb5f921'
+    token: 'ad5978c96a177223b66a4201eca54a3bc8469bd28aae82ccd3f87ce5b224cb9164478e002db1dc7afdd3e'
 });
 
 vk.updates.start().catch(console.error);
 
-const id = 353346061;
+const id = 335462196;
 
 vk.updates.on(['message_new'], async (msg) => {
     if(msg.isOutbox) {
